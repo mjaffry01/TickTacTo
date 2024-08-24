@@ -1,0 +1,25 @@
+﻿<Window x:Class="TicTacToeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tic-Tac-Toe" Height="350" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Name="statusText" Text="Player X's turn" FontSize="20" HorizontalAlignment="Center" Margin="10"/>
+
+        <UniformGrid Grid.Row="1" Rows="3" Columns="3">
+            <Button x:Name="btn1" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn2" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn3" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn4" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn5" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn6" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn7" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn8" Click="Button_Click" FontSize="36"/>
+            <Button x:Name="btn9" Click="Button_Click" FontSize="36"/>
+        </UniformGrid>
+    </Grid>
+</Window>
